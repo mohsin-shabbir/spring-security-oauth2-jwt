@@ -1,0 +1,8 @@
+server:
+  address: 127.0.0.1
+  port: 8082
+security:
+  issuer: ${OIDC_ISSUER:http://localhost:8081/realms/portfolio}
+  jwk-set-uri: ${OIDC_JWKS:http://localhost:8081/realms/portfolio/protocol/openid-connect/certs}
+  audience: collections-api
+
